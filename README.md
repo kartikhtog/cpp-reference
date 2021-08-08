@@ -11,12 +11,12 @@
 
 
 ## Create a makefile
-- gcc -c main.cpp
-- gcc main.o -lstdc++ #link cpp standard library
-- ./a.out
-or
-- g++ main.o #this will link the standard library automatically
-or
-- g++ -Wall -g -c <file>.cpp -o <file>.o
-or
-- g++ main.c # shortest way
+``` gcc -c main.cpp ```
+``` gcc main.o -lstdc++ #link cpp standard library ```
+``` ./a.out ```
+- or
+``` g++ main.o #this will link the standard library automatically ```
+- or
+``` g++ -Wall -g -c <file>.cpp -o <file>.o ```
+- or
+``` g++ main.c # shortest way ``
