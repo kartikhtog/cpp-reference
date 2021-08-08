@@ -19,4 +19,4 @@
 - or
 ``` g++ -Wall -g -c <file>.cpp -o <file>.o ```
 - or
-``` g++ main.c # shortest way ``
+``` g++ main.c # shortest way ```
