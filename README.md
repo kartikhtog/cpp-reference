@@ -45,7 +45,38 @@
 - More easiler readable
 
 ### Vector
-    - See Demo: Vectors
+- See Demo: Vectors
+    - Use Vector is unsure which container to use ?!?
+    - Grow itself
+    - Can travere with an iterator and random access
+    - Cleans up after itself
+    - Actually better than you think
+        - Keeps elements consecutive in memory
+            - Random access is possible and fast ``` vec[3] // ex```
+    - Insert in random location can be slow because it need to copy the elements
+    - Vectors are on the heap
+
+### list
+- See ListAndVectors
+- Implements a linked list
+    - Save the copy when new items are added
+- Can be faster or slower than vectors
+    - Less Copying
+    - More expensive to traverse
+    - Never assume list will be faster
+        - Measure
+        - Even insert operation will require traversal
+
+### Conclusion
+- Not sure? Use Vector
+- Think you need map, stack, queue, etc?
+    - use those
+    - do not invent your own based on vector
+- Write your code to make switching container easy
+    - use *auto* in iterator
+    - use begin() and end()
+    - use standard Algorithms
+
 
 
 

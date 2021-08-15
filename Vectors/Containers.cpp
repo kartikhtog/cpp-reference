@@ -11,7 +11,7 @@ using std::cout;
 
 int main()
 {
-	vector numbers{ 0,1,2 }; // Same vectors numbers = new Vectors(0,1,2);
+	vector numbers{ 0,1,2 }; // Same vectors<int> numbers = new Vectors<int>(0,1,2);
 	numbers.push_back(-2);
 	numbers[0] = 3;
 	int num = numbers[2];
