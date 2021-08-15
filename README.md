@@ -77,9 +77,43 @@
     - use begin() and end()
     - use standard Algorithms
 
+## Lambdas
+- see Example in Lambdas
+- For generic work
+- For a functional sytle
+- For concurrency
+- For readability
+    - Eliminate tiny functions
+- Lambda structure
+```
+[](){}  // a valid lambda
+[] // Capture clause ... make variable in capture clause avaible in the lambda
+[x,y] // capture x and y by value .. copies are made
+[&x, &y] // capture x and y by referense
+// no copies, changes affect the original
+// Dangling references may be an issue
+[x=a+1,y=std::move(b)] // alias or move capture
+// useful when you need it
+[=] // copy *everything* by value
+// Actually its everything used in the body of the lambda
+[&] // copy *everything* by reference
+// Actually copies what you need
+() // Parameters
+{} // Body
 
+```
+- compiler cannot figure out developer specifies return type, ex:
+```
+[](int  n) -> double {...}
+```
+- Parameters
+    - Imposed by the place you are using it
 
-
+- Is it Syntactic Sugar?
+    - Yes/Sure *but* 
+        - keeps the code where it is used for readability
+        - For expressivity 
+        - For confidence no-one else uses this, so you can change it
 
 ## Create a makefile
 ```
