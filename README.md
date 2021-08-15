@@ -32,7 +32,21 @@
     ```
     - *but* humans care
         - const on the right is easier to understand specially when you bring in other concepts
-        - *just put it after*
+        - **just put const after type**
+
+## Standard library containers
+- Work greate with standard algorithms
+- They know their size, manage themselves
+    - You Don't have to manage memory
+    - When the container destructs, so do its contents
+    - It don't call delete on raw pointers but will do the *right thing* for smart pointers
+    - Don't have to Handle special Cases
+    - You don't give up type safety
+- More easiler readable
+
+### Vector
+    - See Demo: Vectors
+
 
 
 
@@ -56,8 +70,8 @@ g++ main.c # shortest way
 ```
 
 
-## c++ versions
-### c++ 11
+## C++ versions
+### C++ 11
 - Move Semantics and rvalues
 - auto
 - Range-based for
@@ -71,7 +85,7 @@ g++ main.c # shortest way
 - Generic lambdas
 - Capture expression in lambdas
 - Standard user defined literals
-### c++ 17
+### C++ 17
 - Structured bindings
 - if initializers
 - Class template argument deductions
